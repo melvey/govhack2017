@@ -1,5 +1,5 @@
 import csv
-filename = '../2016Census_G15_NT_SSC.csv';
+filename = '../data/2016_Census_GCP_State_Suburbs_for_NT/2016Census_G15_NT_SSC.csv';
 with open(filename) as csvfile:
      reader = csv.DictReader(csvfile)
      for row in reader:
