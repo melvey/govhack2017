@@ -10,7 +10,7 @@ cursor = cnx.cursor()
 
 iteml=list()
 pp=pprint.PrettyPrinter()
-with open('2016Census_G02_NT_SSC.csv') as cfile:
+with open('../data/2016_Census_GCP_State_Suburbs_for_NT/2016Census_G02_NT_SSC.csv') as cfile:
 	spam=csv.reader(cfile, delimiter=',')
 	fields=next(spam)
 	#print(fields)
