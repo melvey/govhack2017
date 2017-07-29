@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 29, 2017 at 02:02 PM
+-- Generation Time: Jul 29, 2017 at 03:03 PM
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 7.0.13
 
@@ -34,7 +34,9 @@ CREATE TABLE `host` (
   `X` double NOT NULL,
   `Y` double NOT NULL,
   `aboutNest` varchar(128) NOT NULL,
-  `minStay` varchar(128) NOT NULL
+  `minStay` varchar(128) NOT NULL,
+  `available` int(11) DEFAULT NULL,
+  `lastUpdate` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
