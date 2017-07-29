@@ -1,0 +1,6 @@
+{
+  "name": "ListHomes",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ListHomes.jsx"
+}

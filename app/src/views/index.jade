@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+	head
+		title nesting-place
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+
+
+		meta(name='description', content='#{An application to link students looking for homes with &#34;empty nesters&#34;}')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+
+	body
+		#app!= content
+
+		each script in scripts
+			script(src='#{script}', defer)
