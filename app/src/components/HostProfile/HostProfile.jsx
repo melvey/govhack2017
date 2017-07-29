@@ -27,17 +27,16 @@ class HostProfile extends Component {
 		};
 	}
 
-	getAboutMe = () => (<div className={styles.aboutMe} >
+	getAboutMe = () => (<div className={styles.aboutMe}>
 			<label htmlFor={ids.aboutMe}>About Me</label>
 			<textarea id={ids.aboutMe} />
-
 			<button>Next</button>
-	<div>);
+	</div>);
 
-	getAboutNest = () => (div className={styles.aboutNest}>
+	getAboutNest = () => (<div className={styles.aboutNest}>
 		<div className={styles.inputGroupAddress}>
 			<label htmlFor={ids.inputGroupAddress}>Address</label>
-			<input type="text"> id={ids.inputGroupAddress} />
+			<input type="text" id={ids.inputGroupAddress} />
 		</div>
 
 		<div className={styles.inputGroupAmenities}>
@@ -57,8 +56,7 @@ class HostProfile extends Component {
 
 
 	render() {
-		const className = this.props.className ? `${styles.content} ${this.props.className}` : styles.content;
-		const page = null;
+		let page = null;
 		switch(page) {
 			case 1:
 				page = this.getAboutMe();
@@ -66,9 +64,10 @@ class HostProfile extends Component {
 			case 2:
 				page = this.getAboutNest();
 				break;
-		}
+		};
+
 		return (
-			<div className={className}>
+			<div className={styles.content}>
 				{page}
 			</div>
 		);

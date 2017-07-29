@@ -24,7 +24,6 @@ module.exports = {
 				test: /\.jsx?$/,
 				exclude: /(node_modules|bower_components)/,
 				loaders: [
-					'react-hot',
 					'babel?presets[]=es2015,presets[]=react,presets[]=stage-0'
 				]
 			}

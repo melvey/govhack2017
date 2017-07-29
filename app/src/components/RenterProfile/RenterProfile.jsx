@@ -31,7 +31,7 @@ class RenterProfile extends Component {
 						<input type="text" id={ids.name} />
 					</div>
 
-					<div className={styles.inputGroupImage} />
+					<div className={styles.inputGroupImage}>
 						<img src={this.state.profileImg} />
 						<button className={styles.uploadPhotoBtn}>Upload photo</button>
 					</div>

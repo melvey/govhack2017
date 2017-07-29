@@ -35,7 +35,7 @@ class ListHomes extends Component {
 							<div className={styles.address}>{nest.address}</div>
 							<div className={styles.campusDist}>{nest.campusDist}</div>
 						</div>
-					</div>)};
+					</div>))};
 
 				</div>
 			</div>
