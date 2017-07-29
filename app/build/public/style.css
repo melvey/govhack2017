@@ -1,92 +1,59 @@
-/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
-
 /*
  * Colors
  * ========================================================================== */
-
-
-$white-base:            hsl(255, 255, 255);
-$gray-base:              #000 !default;
-$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
-$gray-dark:              lighten($gray-base, 20%) !default;   // #333
-$gray:                   lighten($gray-base, 33.5%) !default; // #555
-$gray-light:             lighten($gray-base, 46.7%) !default; // #777
-$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
-
 /*
  * Typography
  * ========================================================================== */
-
-$font-family-base:      'Segoe UI', 'HelveticaNeue-Light', sans-serif;
-$font-family-heading: $font-family-base;
-$font-family-body: 'Georgia', 'serif';
-
 /*
  * Layout
  * ========================================================================== */
-
-$max-content-width:     1000px;
-
 /*
  * Media queries breakpoints
  * ========================================================================== */
-
-$screen-xs-min:         480px;  /* Extra small screen / phone */
-$screen-sm-min:         768px;  /* Small screen / tablet */
-$screen-md-min:         992px;  /* Medium screen / desktop */
-$screen-lg-min:         1200px; /* Large screen / wide desktop */
-
+/* Extra small screen / phone */
+/* Small screen / tablet */
+/* Medium screen / desktop */
+/* Large screen / wide desktop */
 /*
  * Animations
  * ========================================================================== */
-
-$animation-swift-out:   .45s cubic-bezier(0.3, 1, 0.4, 1) 0s;
-$brand-color: #61dafb;
-
-._14IZ-GAAn0K48_chyfKTuc {
+.Header__root--14IZ- {
   background: #373277;
-  color: #fff;
-}
+  color: #fff; }
 
-.izfMlpocQzlhdzhHXlcLP {
+.Header__container--izfMl {
   margin: 0 auto;
   padding: 20px 0;
-  max-width: $max-content-width;
-}
+  max-width: 1000px; }
 
-._1-TOOHJ9FBqZKym38v_-56 {
-  color: lighten($brand-color, 10%);
+.Header__brand--1-TOO {
+  color: #93e6fc;
   text-decoration: none;
-  font-size: 1.75em; /* ~28px */
-}
+  font-size: 1.75em;
+  /* ~28px */ }
 
-._162t7f6087uajIYEV0th11 {
-  margin-left: 10px;
-}
+.Header__brandTxt--162t7 {
+  margin-left: 10px; }
 
-._3wxEru5_XabdP8bUvXSNmq {
+.Header__nav--3wxEr {
   float: right;
-  margin-top: 6px;
-}
+  margin-top: 6px; }
 
-.UgCIDFW1QMMgVWQqvxrtN {
-  text-align: center;
-}
+.Header__banner--UgCID {
+  text-align: center; }
 
-._3Qi2josZbQr8t4wY9j4jkF {
+.Header__bannerTitle--3Qi2j {
   margin: 0;
   padding: 10px;
   font-weight: normal;
   font-size: 4em;
-  line-height: 1em;
-}
+  line-height: 1em; }
 
-._3OwMTxh9ozxKYu_ZhfSMx- {
+.Header__bannerDesc--3OwMT {
   padding: 0;
-  color: rgba(255, 255, 255, .5);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 1.25em;
-  margin: 0;
-}
+  margin: 0; }
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 
 /**
@@ -510,16 +477,35 @@ textarea {
   font: inherit; /* 2 */
 }
 /*
+ * Colors
+ * ========================================================================== */
+/*
+ * Typography
+ * ========================================================================== */
+/*
+ * Layout
+ * ========================================================================== */
+/*
+ * Media queries breakpoints
+ * ========================================================================== */
+/* Extra small screen / phone */
+/* Small screen / tablet */
+/* Medium screen / desktop */
+/* Large screen / wide desktop */
+/*
+ * Animations
+ * ========================================================================== */
+/*
  * Base styles
  * ========================================================================== */
-
 html {
   color: #222;
   font-weight: 100;
-  font-size: 1em; /* ~16px; */
-  font-family: $font-family-base;
-  line-height: 1.375; /* ~22px */
-}
+  font-size: 1em;
+  /* ~16px; */
+  font-family: "Segoe UI", "HelveticaNeue-Light", sans-serif;
+  line-height: 1.375;
+  /* ~22px */ }
 
 /*
  * Remove text-shadow in selection highlight:
@@ -528,209 +514,259 @@ html {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-
 ::-moz-selection {
   background: #b3d4fc;
-  text-shadow: none;
-}
+  text-shadow: none; }
 
 ::selection {
   background: #b3d4fc;
-  text-shadow: none;
-}
+  text-shadow: none; }
 
 /*
  * A better looking default horizontal rule
  */
-
 hr {
   display: block;
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
-  padding: 0;
-}
+  padding: 0; }
 
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
-
 audio,
 canvas,
 iframe,
 img,
 svg,
 video {
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
 /*
  * Remove default fieldset styles.
  */
-
 fieldset {
   border: 0;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 /*
  * Allow only vertical resizing of textareas.
  */
-
 textarea {
-  resize: vertical;
-}
+  resize: vertical; }
 
 /*
  * Browser upgrade prompt
  * ========================================================================== */
-
-.browserupgrade {
+.App__browserupgrade--1t44r {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
-  padding: 0.2em 0;
-}
+  padding: 0.2em 0; }
 
 /*
  * Print styles
  * Inlined to avoid the additional HTTP request:
  * http://www.phpied.com/delay-loading-your-print-css/
  * ========================================================================== */
-
 @media print {
   *,
   *:before,
   *:after {
     background: transparent !important;
-    color: #000 !important; /* Black prints faster: http://www.sanbeiji.com/archives/953 */
+    color: #000 !important;
+    /* Black prints faster: http://www.sanbeiji.com/archives/953 */
     box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
+    text-shadow: none !important; }
   a,
   a:visited {
-    text-decoration: underline;
-  }
-
+    text-decoration: underline; }
   a[href]:after {
-    content: " (" attr(href) ")";
-  }
-
+    content: " (" attr(href) ")"; }
   abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
+    content: " (" attr(title) ")"; }
   /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
-    content: "";
-  }
-
+    content: ""; }
   pre,
   blockquote {
     border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
+    page-break-inside: avoid; }
   /*
    * Printing Tables:
    * http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-
   thead {
-    display: table-header-group;
-  }
-
+    display: table-header-group; }
   tr,
   img {
-    page-break-inside: avoid;
-  }
-
+    page-break-inside: avoid; }
   img {
-    max-width: 100% !important;
-  }
-
+    max-width: 100% !important; }
   p,
   h2,
   h3 {
     orphans: 3;
-    widows: 3;
-  }
-
+    widows: 3; }
   h2,
   h3 {
-    page-break-after: avoid;
-  }
-}
-$brand-color: #61dafb;
+    page-break-after: avoid; } }
+/*
+ * Colors
+ * ========================================================================== */
+/*
+ * Typography
+ * ========================================================================== */
+/*
+ * Layout
+ * ========================================================================== */
+/*
+ * Media queries breakpoints
+ * ========================================================================== */
+/* Extra small screen / phone */
+/* Small screen / tablet */
+/* Medium screen / desktop */
+/* Large screen / wide desktop */
+/*
+ * Animations
+ * ========================================================================== */
+.Index__root--xHz9Y {
+  color: #555555; }
 
-.xHz9Y64ZVN8DvJ_IJaqlF {
-  color: $gray;
-}
-
-._9lkSIzVKUNC4zQqbHwAPg {
+.Index__container--9lkSI {
   margin: 0 auto;
   padding: 20px 0;
-  max-width: $max-content-width;
-}
+  max-width: 1000px; }
 
-._36oOIl_fnL31mEyebfeLuC {
-	color: $gray-dark;
-}
+.Index__heading--36oOI {
+  color: #333333; }
+/*
+ * Colors
+ * ========================================================================== */
+/*
+ * Typography
+ * ========================================================================== */
+/*
+ * Layout
+ * ========================================================================== */
+/*
+ * Media queries breakpoints
+ * ========================================================================== */
+/* Extra small screen / phone */
+/* Small screen / tablet */
+/* Medium screen / desktop */
+/* Large screen / wide desktop */
+/*
+ * Animations
+ * ========================================================================== */
+.About__root--2Pc3I {
+  color: #555555; }
 
-
-
-$brand-color: #61dafb;
-
-._2Pc3IzuUQMCLZqbBQkMu8N {
-  color: $gray;
-}
-
-._14LRN6gsBCXVrPhkVwBfWC {
+.About__container--14LRN {
   margin: 0 auto;
   padding: 20px 0;
-  max-width: $max-content-width;
-}
+  max-width: 1000px; }
 
-._3qDXCQBUYudtLCMmjg-93n {
-	color: $gray-dark;
-}
-
-
-
-
-
-
-$brand-color: #61dafb;
-
-._2PbzVik9TpzLWHSyKlY2Kf {
+.About__heading--3qDXC {
+  color: #333333; }
+/*
+ * Colors
+ * ========================================================================== */
+/*
+ * Typography
+ * ========================================================================== */
+/*
+ * Layout
+ * ========================================================================== */
+/*
+ * Media queries breakpoints
+ * ========================================================================== */
+/* Extra small screen / phone */
+/* Small screen / tablet */
+/* Medium screen / desktop */
+/* Large screen / wide desktop */
+/*
+ * Animations
+ * ========================================================================== */
+/*
+ * Colors
+ * ========================================================================== */
+/*
+ * Typography
+ * ========================================================================== */
+/*
+ * Layout
+ * ========================================================================== */
+/*
+ * Media queries breakpoints
+ * ========================================================================== */
+/* Extra small screen / phone */
+/* Small screen / tablet */
+/* Medium screen / desktop */
+/* Large screen / wide desktop */
+/*
+ * Animations
+ * ========================================================================== */
+/*
+ * Colors
+ * ========================================================================== */
+/*
+ * Typography
+ * ========================================================================== */
+/*
+ * Layout
+ * ========================================================================== */
+/*
+ * Media queries breakpoints
+ * ========================================================================== */
+/* Extra small screen / phone */
+/* Small screen / tablet */
+/* Medium screen / desktop */
+/* Large screen / wide desktop */
+/*
+ * Animations
+ * ========================================================================== */
+/*
+ * Colors
+ * ========================================================================== */
+/*
+ * Typography
+ * ========================================================================== */
+/*
+ * Layout
+ * ========================================================================== */
+/*
+ * Media queries breakpoints
+ * ========================================================================== */
+/* Extra small screen / phone */
+/* Small screen / tablet */
+/* Medium screen / desktop */
+/* Large screen / wide desktop */
+/*
+ * Animations
+ * ========================================================================== */
+.NotFound__container--2PbzV {
   margin: 0 auto;
   padding: 20px 0;
-  max-width: $max-content-width;
-}
+  max-width: 1000px; }
 
-.n6nFkPf65LeypuqE4wPfx {
-	color: $gray-dark;
-	font-family: $font-family-heading;
-	font-size: 3em;
-	text-align: center;
-}
+.NotFound__heading--n6nFk {
+  color: #333333;
+  font-family: "Segoe UI", "HelveticaNeue-Light", sans-serif;
+  font-size: 3em;
+  text-align: center; }
 
-._1N67QtftkG1W-K9gkDvzXE {
-	font-family: $font-family-body;
-	text-align: center;
-	font-size: 2em;
-	color: $gray;
-}
-
-
-
+.NotFound__content--1N67Q {
+  font-family: "Georgia", "serif";
+  text-align: center;
+  font-size: 2em;
+  color: #555555; }

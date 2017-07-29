@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
 import styles from './Header.scss';
 import {Link} from 'react-router';
-import logo from './logo.png';
 
 class Header extends Component {
+	
+	static propTypes = {
+		title: PropTypes.string,
+		messageCount: PropTypes.number,
+		user: PropTypes.string
+	};
 
   render() {
 		return (
 				<div className={styles.root}>
 					<div className={styles.container}>
 						<Link to="/" className={styles.brand}>
-							<img src={logo} width="38" height="38" alt="React" />
 							<span className={styles.brandTxt}>Your Company</span>
 						</Link>
 						<div className={styles.banner}>

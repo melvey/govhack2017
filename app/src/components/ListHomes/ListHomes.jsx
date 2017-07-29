@@ -4,7 +4,7 @@ import styles from './ListHomes.scss';
 class ListHomes extends Component {
 
 	static propTypes = {
-		nests: PropTypes.arrayOfType(PropTypes.shape({
+		nests: PropTypes.arrayOf(PropTypes.shape({
 			hostId: PropTypes.number,
 			hostName: PropTypes.string,
 			address: PropTypes.string,

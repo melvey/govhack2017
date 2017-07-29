@@ -5,7 +5,7 @@ import ReactDomServer from 'react-dom/server';
 import {match, RouterContext} from 'react-router';
 import {Provider} from 'react-redux';
 import store from './redux/store';
-import indexTemplate from './views/index.jade';
+import indexTemplate from './views/index.pug';
 import routes from './routes';
 
 const status = {
