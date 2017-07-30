@@ -35,6 +35,13 @@ We have used the [regional Census datapack](https://datapacks.censusdata.abs.gov
 We also use 
 Finally in order to promote the area we use [City of Darwin data](http://open-darwin.opendata.arcgis.com/) to advise of nearby amenities.
 
+## Our App
+We have developed detailed prototypes outlining our application that can be found in the designs directory. Parsers have been created to load our required datasets into a mysql database and can be found in the parsers directory. We have also started creating API endpoints in the api directory to retrieve data from our database. Development has began on the front-end with a React application that can be found in the app directory. 
+
+
+
 [1] https://theconversation.com/why-international-students-need-to-make-aussie-friends-30820
+
 [2] http://www.abc.net.au/news/story-streams/federal-budget-2017/2017-05-09/federal-budget-2017-infographic-data-sliced-diced/8492204#spending/breakdown/2018/social-security-and-welfare
+
 [3] http://www.abc.net.au/radionational/programs/drive/dutch-retirement-home-lets-students-live-rent-free/6351450
