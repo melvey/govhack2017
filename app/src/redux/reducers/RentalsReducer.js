@@ -12,6 +12,7 @@ const defaultList = [
 			hostId: 1,
 			hostName: 'Horatio Rube',
 			suburb: 'Malak',
+			address: 'Applegum St. Malak'
 			campusDist: 4,
 			price: 60,
 			minStay: null,
