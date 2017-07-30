@@ -6,5 +6,6 @@
 export default {
 	setDummy: 'setDummy',
 	setRentalList: 'setRentalList',
-	setUser: 'setUser'
+	setUser: 'setUser',
+	setTitle: 'setTitle'
 };

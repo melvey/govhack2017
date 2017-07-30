@@ -18,42 +18,57 @@
  * Animations
  * ========================================================================== */
 .Header__root--14IZ- {
-  background: #373277;
-  color: #fff; }
+  background: white; }
 
 .Header__container--izfMl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
   padding: 20px 0;
-  max-width: 1000px; }
+  max-width: 1000px;
+  background-color: green;
+  color: white;
+  height: 30px; }
 
-.Header__brand--1-TOO {
-  color: #93e6fc;
-  text-decoration: none;
-  font-size: 1.75em;
-  /* ~28px */ }
+.Header__back_btn--1j5jn {
+  border: 0;
+  background: transparent;
+  font-size: 0; }
+  .Header__back_btn--1j5jn:before {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(980f5c9d472bf6cd679eeff8fb27aa86.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: ''; }
 
-.Header__brandTxt--162t7 {
-  margin-left: 10px; }
+.Header__message_btn--FJMg_ {
+  border: 0;
+  background: transparent;
+  font-size: 0; }
+  .Header__message_btn--FJMg_:before {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(6304720e35c989faf5c9c50ef6737261.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: ''; }
 
-.Header__nav--3wxEr {
-  float: right;
-  margin-top: 6px; }
-
-.Header__banner--UgCID {
-  text-align: center; }
-
-.Header__bannerTitle--3Qi2j {
-  margin: 0;
-  padding: 10px;
-  font-weight: normal;
-  font-size: 4em;
-  line-height: 1em; }
-
-.Header__bannerDesc--3OwMT {
-  padding: 0;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 1.25em;
-  margin: 0; }
+.Header__profile_btn--27Z94 {
+  border: 0;
+  background: transparent;
+  font-size: 0; }
+  .Header__profile_btn--27Z94:before {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(1638a1dcd9275629619740f5066ac006.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: ''; }
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 
 /**
@@ -716,6 +731,67 @@ textarea {
 /*
  * Animations
  * ========================================================================== */
+.RenterProfile__content--NUKZa {
+  margin: 0 auto;
+  padding: 20px 0;
+  max-width: 1000px;
+  color: grey; }
+
+.RenterProfile__input-group__name--2U3jY {
+  display: inline-block;
+  width: 60%;
+  vertical-align: top; }
+  .RenterProfile__input-group__name--2U3jY label {
+    position: absolute;
+    top: -10000px;
+    left: -100000px; }
+  .RenterProfile__input-group__name--2U3jY input {
+    border: 0;
+    background: transparent;
+    font-size: 2em;
+    text-align: center; }
+
+.RenterProfile__input-group__image--1-99A {
+  display: inline-block;
+  width: 35%; }
+  .RenterProfile__input-group__image--1-99A img {
+    display: block;
+    width: 100%; }
+  .RenterProfile__input-group__image--1-99A button {
+    display: block;
+    width: 100%; }
+
+.RenterProfile__input-group__about--2oZ6k,
+.RenterProfile__input-group__campus--__VQQ {
+  width: 100%;
+  display: block; }
+  .RenterProfile__input-group__about--2oZ6k label,
+  .RenterProfile__input-group__campus--__VQQ label {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.5em; }
+  .RenterProfile__input-group__about--2oZ6k textarea,
+  .RenterProfile__input-group__campus--__VQQ textarea {
+    width: 100%;
+    padding: 20px;
+    border-color: grey; }
+  .RenterProfile__input-group__about--2oZ6k select,
+  .RenterProfile__input-group__campus--__VQQ select {
+    width: 100%;
+    background: transparent;
+    border-color: grey;
+    padding: 20px;
+    font-size: 1.2em; }
+
+.RenterProfile__next-btn--2vi8c button {
+  background-color: green;
+  color: white;
+  font-size: 1.4em;
+  padding: 10px;
+  float: right;
+  border: 1px solid grey;
+  min-width: 30%; }
 /*
  * Colors
  * ========================================================================== */

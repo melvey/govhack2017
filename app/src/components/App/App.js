@@ -1,5 +1,5 @@
 import React, {Component, PropTypes} from 'react';
-import Header from '../Header';
+import Header from '../../containers/HeaderContainer';
 import styles from './App.scss';
 
 class App extends Component {

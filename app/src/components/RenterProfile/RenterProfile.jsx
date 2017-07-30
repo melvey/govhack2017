@@ -1,20 +1,42 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import styles from './RenterProfile.scss';
 
 class RenterProfile extends Component {
 
 	static propTypes = {
-		className: PropTypes.string
+		user: PropTypes.shape({
+			name: PropTypes.string,
+			image: PropTypes.string,
+			aboutMe: PropTypes.string,
+			campus: PropTypes.number
+		}).isRequired,
+		campuses: PropTypes.arrayOf(PropTypes.shape({
+			id: PropTypes.number,
+			name: PropTypes.string
+		})).isRequired,
+		setName: PropTypes.func.isRequired,
+		setAbout: PropTypes.func.isRequired,
+		setCampus: PropTypes.func.isRequired
 	};
 
 	constructor(props) {
 		super();
 
 		this.props = props;
-		this.state = {
-			profileImg: 'dummy.png'
-		};
 	}
+
+	setName = (evt) => {
+		this.props.setName(evt.target.value);
+	};
+
+	setAbout = (evt) => {
+		this.props.setAbout(evt.target.value);
+	};
+
+	setCampus = (evt) => {
+		this.props.setCampus(evt.target.value);
+	};
 
 	render() {
 		const ids = {
@@ -22,27 +44,36 @@ class RenterProfile extends Component {
 			about: 'renter-profile-about'
 		};
 
-		const className = this.props.className ? `${styles.content} ${this.props.className}` : styles.content;
+		const image = this.props.user.image || 'http://via.placeholder.com/400x400';
+
 		return (
-			<div className={className}>
+			<div className={styles.content}>
 				<form>
 					<div className={styles.inputGroupName}>
 						<label htmlFor={ids.name}>Name</label>
-						<input type="text" id={ids.name} />
+						<input type="text" id={ids.name} value={this.props.user.name} placeholder="Jane Doe" onChange={this.setName} />
 					</div>
 
 					<div className={styles.inputGroupImage}>
-						<img src={this.state.profileImg} />
+						<img src={image} />
 						<button className={styles.uploadPhotoBtn}>Upload photo</button>
 					</div>
 
 					<div className={styles.inputGroupAbout}>
-						<label htmlFor={ids.about}>About Me</label>
-						<textarea id={ids.about} />
+						<label htmlFor={ids.about}>Describe myself</label>
+						<textarea id={ids.about} value={this.props.user.aboutMe} onChange={this.setAbout} />
+					</div>
+
+					<div className={styles.inputGroupCampus}>
+						<label htmlFor={ids.about}>My Campus</label>
+						<select value={this.props.user.campus} onChange={this.setCampus}>
+							<option value="">Select campus</option>
+							{this.props.campuses.map((campus) => (<option value={campus.value}>{campus.name}</option>))}
+						</select>
 					</div>
 
 					<div className={styles.nextBtn}>
-						<button>Update Profile</button>
+						<button>Next</button>
 					</div>
 
 				</form>

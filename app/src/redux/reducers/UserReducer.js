@@ -3,10 +3,13 @@
 * Redux Reducer for user
 **/
 
+import Immutable, {Map} from 'immutable';
 import actionTypes from '../actionTypes';
 
 function handleSetUser(state, data) {
-  return Object.assign({}, state, {setUser: data});
+	return Map.isMap(data)
+		? data
+		: Immutable.fromJS(data);
 }
 
 export default function setuserReducer(state, action) {
@@ -14,6 +17,6 @@ export default function setuserReducer(state, action) {
 		case actionTypes.setUser:
 			return handleSetUser(state, action.payload);
 		default:
-			return state || {};
+			return state || new Map()
 	}
 }

@@ -1,1 +1,81 @@
 @import '../variables.scss';
+
+.content {
+  margin: 0 auto;
+  padding: 20px 0;
+  max-width: $max-content-width;
+	color: $text-colour;
+}
+
+.input-group__name {
+	display: inline-block;
+	width: 60%;
+	vertical-align: top;
+
+	label {
+		position: absolute;
+		top: -10000px;
+		left: -100000px;
+	}
+
+	input {
+		border: 0;
+		background: transparent;
+		font-size: 2em;
+		text-align: center;
+	}
+}
+
+.input-group__image {
+	display: inline-block;
+	width: 35%;
+
+	img {
+		display: block;
+		width: 100%;
+	}
+
+	button {
+		display: block;
+		width: 100%;
+	}
+}
+
+.input-group__about,
+.input-group__campus {
+	width: 100%;
+	display: block;
+
+	label {
+		display: block;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		font-size: 1.5em;
+	}
+
+	textarea {
+		width: 100%;
+		padding: 20px;
+		border-color: $text-colour;
+	}
+
+	select {
+		width: 100%;
+		background: transparent;
+		border-color: $text-colour;
+		padding: 20px;
+		font-size: 1.2em;
+	}
+}
+
+.next-btn {
+	button {
+		background-color: $highlight;
+		color: $white;
+		font-size: 1.4em;
+		padding: 10px;
+		float: right;
+		border: 1px solid $text-colour;
+		min-width: 30%;
+	}
+}

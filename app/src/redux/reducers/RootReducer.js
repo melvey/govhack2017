@@ -4,8 +4,12 @@
 **/
 
 import {combineReducers} from 'redux';
-import dummyReducer from './DummyReducer';
+import generalReducer from './GeneralReducer';
+import rentalsReducer from './RentalsReducer';
+import userReducer from './UserReducer';
 
 export default combineReducers({
-	dummy: dummyReducer
+	general: generalReducer,
+	rentals: rentalsReducer,
+	user: userReducer
 });

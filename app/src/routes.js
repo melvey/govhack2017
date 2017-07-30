@@ -4,7 +4,7 @@ import App from './components/App';
 import Index from './components/Index';
 import About from './components/About';
 import ListHomes from './components/ListHomes';
-import RenterProfile from './components/RenterProfile';
+import RenterProfile from './containers/RenterProfileContainer';
 import HostProfile from './components/HostProfile';
 import NotFound from './components/NotFound';
 

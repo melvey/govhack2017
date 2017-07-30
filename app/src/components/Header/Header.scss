@@ -2,47 +2,46 @@
 
 $brand-color: #61dafb;
 
-:local(.root) {
-  background: #373277;
-  color: #fff;
+@mixin icon-btn($icon-url) {
+	border: 0;
+	background: transparent;
+	font-size: 0;
+
+	&:before {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		background-image: url($icon-url);
+		background-repeat: no-repeat;
+		background-size: contain;
+		content: '';
+	}
 }
 
-:local(.container) {
+.root {
+  background: $background;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
   margin: 0 auto;
   padding: 20px 0;
   max-width: $max-content-width;
+	background-color: $highlight;
+	color: $white;
+	height: 30px;
 }
 
-:local(.brand) {
-  color: lighten($brand-color, 10%);
-  text-decoration: none;
-  font-size: 1.75em; /* ~28px */
+.back_btn {
+		@include icon-btn('./back.svg');
 }
 
-:local(.brandTxt) {
-  margin-left: 10px;
+.message_btn {
+		@include icon-btn('./mail.svg');
 }
 
-:local(.nav) {
-  float: right;
-  margin-top: 6px;
-}
-
-:local(.banner) {
-  text-align: center;
-}
-
-:local(.bannerTitle) {
-  margin: 0;
-  padding: 10px;
-  font-weight: normal;
-  font-size: 4em;
-  line-height: 1em;
-}
-
-:local(.bannerDesc) {
-  padding: 0;
-  color: rgba(255, 255, 255, .5);
-  font-size: 1.25em;
-  margin: 0;
+.profile_btn {
+		@include icon-btn('./user.svg');
 }
