@@ -1,8 +1,12 @@
+<?php
+
+include_once 'campusOut.php';
+include_once  'hostOut.php';
+include_once 'distanceCheck.php';
 
 
- <?php
  function getName($userID){
-	require_once 'config.php';
+	include 'config.php';
 	$getQuery="SELECT * FROM user WHERE userID=$userID";
 	$result = mysqli_query($conn, $getQuery);
 		if($row = mysqli_fetch_assoc($result)){
@@ -11,8 +15,8 @@
  }
  
  function getSub($subID){
-	 require_once 'config.php';
-	 $getQuery="SELECT * FROM suburb WHERE suburbID=$subID";
+	include 'config.php';
+	$getQuery="SELECT * FROM suburb WHERE suburbID=$subID";
 	$result = mysqli_query($conn, $getQuery);
 		if($row = mysqli_fetch_assoc($result)){
 			return $row['suburbName'];
@@ -20,19 +24,17 @@
  }
  
  function getCam($userID){
-	 require_once 'config.php';
-	 $getQuery="SELECT * FROM renter WHERE userID=$userID";
+	 include 'config.php';
+	$getQuery="SELECT * FROM renter WHERE userID=$userID";
 	$result = mysqli_query($conn, $getQuery);
 		if($row = mysqli_fetch_assoc($result)){
 			return $row['campus'];
 		} 
  }
  
-function listHost($campus){ 
-   include 'campusOut.php';
-   include  'hostOut.php';
-   include 'distanceCheck.php';
+function listHost(){ 
 	
+	$userID=5;
    $hostList=getHost(0);
    $processed=array();
    foreach ($hostList as $host){
@@ -40,19 +42,20 @@ function listHost($campus){
 	   
 	   $nhost['hostID']=$host['id'];
 	   $nhost['hostName']=getName($host['id']);
-	   
-	   $subID=end(explode(',', $host['addr']));
+	   $chA=explode(',', $host['addr']);
+	   $subID=end($chA);
 	   $nhost['suburb']=getSub($subID);
 	   
-	   $nhost['camID']=getCam($userID);
+	   $camID=getCam($userID);
 	   $nhost['campusDist']=distanceCheck($camID, $host['id']);
 	   
 	   $nhost['price']=$host['price'];
 	   $nhost['minStay']=$host['minStay'];
 	   $nhost['photo']=$host['photo'];
 	   array_push($processed, $nhost);
+
    } 
   return json_encode($processed);
   }
-  
+  print (listHost());
    ?>

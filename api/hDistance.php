@@ -1,4 +1,5 @@
-<?php function hDistance(
+<?php 
+function hDistance(
   $latitudeFrom, $longitudeFrom, $latitudeTo, $longitudeTo, $earthRadius = 6371000)
 {
   // convert from degrees to radians
