@@ -1,6 +1,6 @@
 <?php
 
-function ($campusID, $hostID){
+function distanceCheck($campusID, $hostID){
 require_once 'config.php';
 require_once 'hDistance.php';
 
