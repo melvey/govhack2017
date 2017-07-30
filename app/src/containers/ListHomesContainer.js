@@ -1,9 +1,10 @@
 import {connect} from 'react-redux';
 import ListHomes from '../components/ListHomes';
+import store from '../redux/store';
+import setUserAction from '../redux/actions/SetRentalListAction';
 
 const mapStateToProps = (state) => ({
-	// Modify this to only include the required properties
-	...state
+	nests: state.rentals.toJS()
 });
 
 

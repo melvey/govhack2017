@@ -1,5 +1,6 @@
 var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 var nodeExternals = require('webpack-node-externals');
 var webpack = require('webpack');
 var merge = require('lodash.merge');
@@ -21,6 +22,7 @@ var BaseConfig = require('./webpack.base.config');
 	},
 	plugins: [
 		new ExtractTextPlugin({filename: 'style.css'}),
+		new CopyWebpackPlugin([{from: 'src/public', to: '.'}]),
 		new webpack.DefinePlugin({
 			'global.GENTLY': false
 		})
