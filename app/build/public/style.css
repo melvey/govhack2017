@@ -712,6 +712,62 @@ textarea {
 /*
  * Animations
  * ========================================================================== */
+.ListHomes__search__container--1CoKd {
+  width: 100%; }
+
+.ListHomes__search__box--1wx9O {
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid green; }
+  .ListHomes__search__box--1wx9O input {
+    display: inline-block;
+    width: calc(100% - 40px);
+    height: 30px;
+    border: 0; }
+  .ListHomes__search__box--1wx9O:after {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    content: '';
+    background: url(a9ce63ba4b644208a333ca050ee774e1.svg);
+    vertical-align: middle; }
+
+.ListHomes__nest__item--zjU23 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: grey; }
+
+.ListHomes__nest__details--3srm3 {
+  display: inline-block;
+  width: 70%; }
+
+.ListHomes__nest__photo--2F2CF {
+  width: 60%; }
+
+.ListHomes__host--1epnL {
+  font-size: 1.5em; }
+
+.ListHomes__nest__right--1FfSU {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top; }
+
+.ListHomes__price--3WQUA {
+  color: #fd687e;
+  font-size: 1.5em;
+  text-align: left; }
+
+.ListHomes__viewBtn--3IZ6- {
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  background-color: green;
+  border: 1px solid grey;
+  text-decoration: none;
+  text-align: center;
+  min-width: 60%; }
 /*
  * Colors
  * ========================================================================== */
@@ -784,7 +840,8 @@ textarea {
     padding: 20px;
     font-size: 1.2em; }
 
-.RenterProfile__next-btn--2vi8c button {
+.RenterProfile__next-btn--2vi8c button,
+.RenterProfile__input-group__image--1-99A button {
   background-color: green;
   color: white;
   font-size: 1.4em;

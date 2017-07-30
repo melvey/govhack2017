@@ -1,1 +1,79 @@
 @import '../variables.scss';
+
+$price-colour: hsl(351, 98%, 70%);
+
+.search__container {
+	width: 100%;
+}
+
+.search__box {
+	width: 80%;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid $highlight;
+
+	input {
+		display: inline-block;
+		width: calc(100% - 40px);
+		height: 30px;
+		border: 0;
+	}
+
+	&:after {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		content: '';
+		background: url('./search.svg');
+		vertical-align: middle;
+	}
+}
+
+.nest__item {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: $text-colour;
+}
+
+.nest__details {
+	display: inline-block;
+	width: 70%;
+}
+
+.nest__photo {
+	width: 60%;
+}
+
+.host {
+	font-size: 1.5em;
+}
+
+.suburb {
+}
+
+.campus-dist {
+}
+
+.nest__right {
+	display: inline-block;
+	width: 30%;
+	vertical-align: top;
+}
+
+.price {
+	color: $price-colour;
+	font-size: 1.5em;
+	text-align: left;
+}
+
+.viewBtn {
+	display: inline-block;
+	padding: 10px;
+	color: $white;
+	background-color: $highlight;
+	border: 1px solid $text-colour;
+	text-decoration: none;
+	text-align: center;
+	min-width: 60%;
+}
