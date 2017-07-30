@@ -34,7 +34,7 @@ include_once 'distanceCheck.php';
  
 function listHost(){ 
 	
-	$userID=5;
+	$userID=$_Session['UserID'];
    $hostList=getHost(0);
    $processed=array();
    foreach ($hostList as $host){
@@ -57,5 +57,5 @@ function listHost(){
    } 
   return json_encode($processed);
   }
-  print (listHost());
+ 
    ?>
