@@ -1,8 +1,7 @@
 <?php 
-	session_start();
 	
 	function getHost($userID){
-	require_once 'config.php';
+	include 'config.php';
 	if ($userID > 0){
 	$getQuery="SELECT * FROM host WHERE userID='$userID'";
 	}
@@ -29,5 +28,4 @@
 		return $hostL;
 	}
 	
-	var_dump(getHost(1));
 ?>

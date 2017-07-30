@@ -1,6 +1,4 @@
-<?php 
-	session_start();
-	
+<?php 	
 	function getPark(){
 	require_once 'config.php';
 	$getQuery="SELECT * FROM park_facility";
@@ -17,5 +15,5 @@
 		return $parkList;
 	}
 	//var_dump($parkList);
-	var_dump(getPark());
+	//var_dump(getPark());
 ?>

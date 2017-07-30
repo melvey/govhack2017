@@ -1,9 +1,9 @@
 <?php
 
-function distanceCheck($campusID, $hostID){
-require_once 'config.php';
-require_once 'hDistance.php';
 
+function distanceCheck($campusID, $hostID){
+include 'config.php';
+include_once 'hDistance.php';
 $getQuery="SELECT * FROM campus WHERE campusID ='$campusID'";
 $result = mysqli_query($conn, $getQuery);
 $row = mysqli_fetch_assoc($result);
@@ -18,6 +18,7 @@ $row = mysqli_fetch_assoc($result);
 			$hostX=$row['X'];
 			$hostY=$row['Y'];
 			
-return hDistance($campX, $campY, $hostX, $hostY);
+$distance=hDistance($campX, $campY, $hostX, $hostY);
+return $distance;
 }
 ?>

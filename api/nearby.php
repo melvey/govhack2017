@@ -1,7 +1,7 @@
 <?php
 
 function getNearBY($hostID){
-require_once 'config.php';	
+require 'config.php';	
 require_once 'hDistance.php';		
 $getQuery="SELECT * FROM host WHERE userID='$hostID'";
 $result = mysqli_query($conn, $getQuery);
@@ -14,8 +14,8 @@ else{
 	$hostY=0;
 }
 			
-$getQuery="SELECT * FROM park_facility WHERE (X < " .(string)($hostX+0.1) ." or X > ". (string)($hostX-0.1 ).") and (Y <". (string)($hostY+0.1) ."or Y>". (string)($hostY-0.1) .")";
-print $getQuery;
+$getQuery="SELECT * FROM park_facility WHERE (X < " .(string)($hostX+0.1) ." and X > ". (string)($hostX-0.1 ).") and (Y <". (string)($hostY+0.1) ." and Y>". (string)($hostY-0.1) .")";
+//print $getQuery;
 
 $result = mysqli_query($conn, $getQuery);
 
@@ -32,5 +32,5 @@ while($row = mysqli_fetch_assoc($result)){
 		
 return $facilityL;
 }
-var_dump(getNearBY(2));
+
 ?>
